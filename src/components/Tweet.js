@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { dbService, storageService } from "fbase";
 
-const Nweet = ({nweetObj, isOwner}) => {
+const Tweet = ({nweetObj, isOwner}) => {
     const [editing, setEditing] = useState(false);
     const [newNweet, setNewNweet] = useState(nweetObj.text);
     
@@ -64,4 +64,4 @@ const Nweet = ({nweetObj, isOwner}) => {
     )
 }
 
-export default Nweet;
+export default Tweet;
